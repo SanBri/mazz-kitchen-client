@@ -9,22 +9,14 @@
     position: absolute;
     top: 0;
     animation: right-move 0.5s;
-    height: 66vh;
-    width: 22rem;
+    height: 61vh;
+    width: 25rem;
     background-color: $color-secondary;
     border-bottom-right-radius: 30%;
-    -webkit-transform: perspective(300px) rotateX(-10deg);
-    -o-transform: perspective(300px) rotateX(-30deg);
-    -moz-transform: perspective(300px) rotateX(-30deg);
-    transform-origin: 0% 50%;
-    -webkit-transform-origin: 0% 50%;
-    -moz-transform-origin: 0% 50%;
-    -o-transform-origin: 0% 50%;
     &-content {
       width: 16rem;
-      padding: 5rem 2rem;
+      padding: 4rem 2rem;
       animation: opacity 2s;
-
       & p {
         font-family: "Bree-Light";
         font-size: 1.3rem;

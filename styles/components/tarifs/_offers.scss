@@ -35,3 +35,20 @@
     }
   }
 }
+
+/* PETIT ECRAN */
+@media all and (max-width: $breakpoint-small-screen) {
+  .offers {
+    width: 90rem;
+    padding-bottom: 4rem;
+    &__content {
+      padding-right: 1rem;
+      & .condition-text {
+        padding-top: 0;
+        & p {
+          font-size: $condition-text;
+        }
+      }
+    }
+  }
+}

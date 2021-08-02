@@ -68,3 +68,15 @@
     }
   }
 }
+
+@media all and (max-width: $breakpoint-small-screen) {
+  .post-card {
+    &__content {
+      &__buttons {
+        &__administration {
+          margin-left: 25rem;
+        }
+      }
+    }
+  }
+}

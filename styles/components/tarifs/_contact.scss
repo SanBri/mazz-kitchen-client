@@ -6,3 +6,12 @@
   display: flex;
   flex-direction: column;
 }
+
+/* PETIT ECRAN */
+@media all and (max-width: $breakpoint-small-screen) {
+  .contact {
+    width: 92rem;
+    height: auto;
+    padding: 2rem;
+  }
+}

@@ -23,3 +23,13 @@
     }
   }
 }
+
+/* PETIT ECRAN */
+@media all and (max-width: $breakpoint-small-screen) {
+  .conclusion {
+    padding-bottom: 1.5rem;
+    &-card {
+      padding: 1rem;
+    }
+  }
+}

@@ -19,12 +19,12 @@
 }
 
 .card {
+  width: 50rem;
   margin: 1rem auto 0 auto;
   padding: 3rem;
   background-color: $color-primary-white;
   border-radius: 1rem;
   box-shadow: $all-shadow;
-
   &__title {
     width: 70rem;
     padding-bottom: $padding-bottom-title;

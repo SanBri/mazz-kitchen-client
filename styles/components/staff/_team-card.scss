@@ -40,3 +40,10 @@
     width: 15rem;
   }
 }
+
+/* PETIT ECRAN */
+@media all and (max-width: $breakpoint-small-screen) {
+  .team-card {
+    padding-top: 6rem;
+  }
+}

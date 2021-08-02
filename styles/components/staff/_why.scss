@@ -50,3 +50,20 @@
     }
   }
 }
+
+/* PETIT ECRAN */
+@media all and (max-width: $breakpoint-small-screen) {
+  .why {
+    &:before {
+      top: 79%;
+    }
+    &__title {
+      padding: 0;
+    }
+    &__content {
+      margin: auto;
+      width: 80rem;
+      padding-top: 1rem;
+    }
+  }
+}

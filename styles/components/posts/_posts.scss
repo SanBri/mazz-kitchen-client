@@ -9,3 +9,11 @@
     margin-bottom: 1.5rem;
   }
 }
+
+@media all and (max-width: $breakpoint-small-screen) {
+  .posts {
+    &__title {
+      padding-top: 1rem;
+    }
+  }
+}

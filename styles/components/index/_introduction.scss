@@ -19,10 +19,13 @@
 }
 
 /* PETIT ECRAN */
-@media all and (max-width: 1400px) {
+@media all and (max-width: $breakpoint-small-screen) {
+  #introductionSection {
+    margin-top: -1rem;
+  }
   .introduction {
     &__text {
-      padding: 1rem 0 0.5rem 0;
+      padding-top: 0.5rem;
     }
   }
 }

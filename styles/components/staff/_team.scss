@@ -20,3 +20,17 @@
     flex-direction: row;
   }
 }
+
+/* PETIT ECRAN */
+@media all and (max-width: $breakpoint-small-screen) {
+  .team {
+    height: auto;
+    &__title {
+      padding: 0;
+      top: -5rem;
+    }
+    &__content {
+      padding-bottom: 5rem;
+    }
+  }
+}

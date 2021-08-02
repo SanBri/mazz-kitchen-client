@@ -13,11 +13,7 @@ const Index = () => {
       <Section padding='5vh 0 0 0' id='heroSection' minHeight='50vh'>
         <Hero />
       </Section>
-      <Section
-        padding='10rem 0 0em 0'
-        id='introductionSection'
-        minHeight='50vh'
-      >
+      <Section padding='10rem 0 0 0' id='introductionSection' minHeight='50vh'>
         <SectionIndex title='ET SI ON CHANGEAIT (VRAIMENT) LES CHOSES ?'>
           <Introduction />
         </SectionIndex>
