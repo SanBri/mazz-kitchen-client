@@ -3,23 +3,26 @@
   height: 45rem;
   padding-bottom: 4rem;
   &__content {
+    padding-top: 2rem;
     margin: auto;
     width: 100%;
     height: 100%;
     position: relative;
     &-img {
       z-index: 20;
-      width: 100%;
-      height: 50rem;
+      width: 90rem;
+      height: 20rem;
       position: absolute;
-      top: 0;
+      bottom: 60%;
+      left: 50%;
+      transform: translateX(-50%);
     }
     &-yellow-form {
       clip-path: polygon(0 51%, 100% 14%, 100% 100%, 0% 100%);
       background-color: $color-secondary;
       padding-top: 10rem;
-      margin-left: 11rem;
-      width: 85.5rem;
+      margin-left: 8.7rem;
+      width: 90rem;
       height: 40rem;
     }
   }
@@ -29,7 +32,7 @@
   .strategy {
     &__content {
       &-yellow-form {
-        margin-left: 5.8rem;
+        margin-left: 3.6rem;
       }
     }
   }
