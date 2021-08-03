@@ -10,7 +10,7 @@ const SinglePost = ({ post }) => {
   const isAuthenticated = useSelector(
     (state) => state.authReducer.isAuthenticated
   );
-  const { /* _id, */ title, text, date, edited } = post;
+  const { _id, title, text, date, edited } = post;
   const { name } = post.author;
 
   return (
@@ -21,7 +21,7 @@ const SinglePost = ({ post }) => {
             <span className='discret'>Publié par {name}</span>
           </p>
           <div className='single-post__administration__actions'>
-            {/* <Actions id={_id} fontSize='1.9rem' /> */}
+            <Actions id={_id} fontSize='1.9rem' />
           </div>
         </div>
       )}
@@ -60,7 +60,7 @@ const SinglePost = ({ post }) => {
             <div className='single-post__edit-history--active'>
               <ul>
                 {edited.map((edit) => (
-                  <li key={edit.title} /* key={edit._id} */>
+                  <li key={edit._id}>
                     <span className='discret'>
                       Édité par {edit.author} le{" "}
                       <Moment format='DD/MM/YYYY'>{edit.date}</Moment>

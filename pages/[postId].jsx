@@ -2,8 +2,17 @@ import Section from "../component/common/section";
 import Card from "../component/common/card";
 import SinglePost from "../component/post/SinglePost";
 import Alert from "../component/layout/Alert.jsx";
+import Spinner from "../component/layout/Spinner";
+
+import { useRouter } from "next/router";
 
 const Post = ({ post }) => {
+  const router = useRouter();
+
+  if (router.isFallback) {
+    return <Spinner />;
+  }
+
   return (
     <Section id='postSection' minHeight='0' padding='8rem 8rem 2rem 8rem'>
       <Alert />
@@ -33,7 +42,7 @@ export async function getStaticPaths() {
   } catch (err) {
     console.log(`Error fetching ressources: `, err);
   }
-  return { paths, fallback: true };
+  return { paths, fallback: false };
 }
 
 export const getStaticProps = async ({ params }) => {
