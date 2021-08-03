@@ -13,7 +13,7 @@ const Index = () => {
       <Section padding='5vh 0 0 0' id='heroSection' minHeight='50vh'>
         <Hero />
       </Section>
-      <Section padding='10rem 0 0 0' id='introductionSection' minHeight='50vh'>
+      <Section padding='10rem 0 0 0' id='introductionSection'>
         <SectionIndex title='ET SI ON CHANGEAIT (VRAIMENT) LES CHOSES ?'>
           <Introduction />
         </SectionIndex>
@@ -32,7 +32,7 @@ const Index = () => {
           On vous attend !
         </p>
       </Section>
-      <Section id='missionSection' minHeight='82vh' padding='1rem 0 0 0'>
+      <Section id='missionSection' padding='1rem 0 0 0'>
         <SectionIndex title='NOTRE MISSION'>
           <Mission />
         </SectionIndex>
@@ -46,13 +46,17 @@ const Index = () => {
           <Services />
         </SectionIndex>
       </Section>
-      <Section id='strategySection' minHeight='90vh' padding='1rem 0 0 0'>
+      <Section id='strategySection' padding='1rem 0 0 0'>
         <p></p>
         <SectionIndex title='VOTRE STRATÉGIE DE COMMUNICATION DIGITALE'>
           <Strategy />
         </SectionIndex>
       </Section>
-      <Section id='conclusionSection' minHeight='55vh' color='background-prim'>
+      <Section
+        id='conclusionSection'
+        color='background-prim'
+        padding='1rem 0 2rem 0'
+      >
         <Conclusion />
       </Section>
     </>
