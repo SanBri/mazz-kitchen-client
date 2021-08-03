@@ -14,7 +14,7 @@ const PostsList = () => {
 
   useEffect(() => {
     dispatch(getPosts());
-  }, [loading]);
+  }, [dispatch]);
 
   return posts.loading ? (
     <Spinner />
