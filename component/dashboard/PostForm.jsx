@@ -73,7 +73,7 @@ const PostForm = ({ id }) => {
       dispatch(addPost(formData, status, id, true));
     }
     formData.title !== "" && formData.text !== ""
-      ? router.push("/dashboard-posts", { shallow: true })
+      ? router.push("/dashboard-posts")
       : "";
   };
 
