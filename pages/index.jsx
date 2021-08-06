@@ -10,10 +10,10 @@ import Conclusion from "../component/index/conclusion";
 const Index = () => {
   return (
     <>
-      <Section padding='5vh 0 0 0' id='heroSection' minHeight='50vh'>
+      <Section padding='5vh 0 0 0' id='heroSection'>
         <Hero />
       </Section>
-      <Section padding='10rem 0 0 0' id='introductionSection'>
+      <Section padding='4rem 0 0 0' id='introductionSection'>
         <SectionIndex title='ET SI ON CHANGEAIT (VRAIMENT) LES CHOSES ?'>
           <Introduction />
         </SectionIndex>
