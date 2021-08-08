@@ -10,7 +10,7 @@ import Conclusion from "../component/index/conclusion";
 const Index = () => {
   return (
     <>
-      <Section padding='5vh 0 0 0' id='heroSection'>
+      <Section id='heroSection'>
         <Hero />
       </Section>
       <Section padding='4rem 0 0 0' id='introductionSection'>

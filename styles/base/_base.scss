@@ -8,3 +8,10 @@ html {
     font-size: 65.5%; // 1 rem => 10 px
   }
 }
+
+/* SMARTPHONE */
+@media all and (max-width: $breakpoint-smartphone) {
+  .np {
+    display: none;
+  }
+}

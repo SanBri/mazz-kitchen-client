@@ -100,14 +100,6 @@ const PostForm = ({ id }) => {
               "undo redo | bold italic | alignleft aligncenter alignright | code",
           }}
         />
-        {/* <Input
-          name='text'
-          label='Contenu'
-          placeholder='Rédigez un article...'
-          type='textarea'
-          value={text}
-          onChange={(e) => onChange(e)}
-        /> */}
         <Input
           name='category'
           label='Catégorie'

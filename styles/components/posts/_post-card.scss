@@ -80,3 +80,33 @@
     }
   }
 }
+
+/* SMARTPHONE */
+@media all and (max-width: $breakpoint-smartphone) {
+  .post-card {
+    width: 20rem;
+    height: auto;
+    &__content {
+      width: 30rem;
+      &__line {
+        width: 10rem;
+      }
+      &__text {
+        width: 20rem;
+        height: 10rem;
+        p {
+          word-wrap: hidden;
+        }
+      }
+      &__buttons {
+        width: 20rem;
+      }
+    }
+    &__image {
+      display: none;
+    }
+    &__arrow {
+      top: 30%;
+    }
+  }
+}

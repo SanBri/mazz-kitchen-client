@@ -1,3 +1,7 @@
+#headerSection {
+  padding: 0 2rem 0 2rem;
+}
+
 .navigation-bar {
   width: 100%;
   padding: 1rem;
@@ -22,7 +26,7 @@
       font-family: "Nimbus-Light";
       font-weight: bold;
       text-decoration: none;
-      color: white;
+      color: $color-primary-white;
     }
   }
   &__admin {
@@ -61,5 +65,41 @@
   }
   .navigation-bar {
     padding-top: 1rem;
+  }
+}
+
+/* SMARTPHONE */
+@media all and (max-width: $breakpoint-smartphone) {
+  #headerSection {
+    padding: 0;
+    z-index: 14;
+    display: none;
+  }
+  .navigation-bar {
+    padding: 0;
+    background-color: $color-secondary;
+    border-top-left-radius: 200px;
+    height: 100vh;
+    position: fixed;
+    &__logo {
+      display: none;
+    }
+    &__links {
+      width: 100%;
+      margin: 0;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__link {
+      margin: 2rem;
+      & a,
+      p {
+        font-family: "Futura-Bold";
+        font-size: 2rem;
+        color: $color-primary-black;
+        text-transform: uppercase;
+      }
+    }
   }
 }

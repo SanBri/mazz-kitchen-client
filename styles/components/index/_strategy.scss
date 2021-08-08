@@ -29,3 +29,10 @@
     }
   }
 }
+
+/* SMARTPHONE */
+@media all and (max-width: $breakpoint-smartphone) {
+  #strategySection {
+    display: none;
+  }
+}

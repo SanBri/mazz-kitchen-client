@@ -44,7 +44,7 @@
 }
 
 /* PETIT ECRAN */
-@media all and (max-width: 1400px) {
+@media all and (max-width: $breakpoint-small-screen) {
   .services {
     &__content {
       margin: auto;
@@ -58,5 +58,12 @@
         height: 30rem;
       }
     }
+  }
+}
+
+/* SMARTPHONE */
+@media all and (max-width: $breakpoint-smartphone) {
+  #serviceSection {
+    display: none;
   }
 }

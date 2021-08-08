@@ -1,6 +1,7 @@
 import Link from "next/link";
 import SocialNetworks from "../common/socialNetworks";
 import Icon from "./icon";
+import Burger from "../layout/Burger";
 
 const Header = () => {
   return (
@@ -22,6 +23,9 @@ const Header = () => {
         </div>
         <div className='fixed-header__social-networks'>
           <SocialNetworks width='30rem' height='30rem' color='yellow' />
+        </div>
+        <div className='fixed-header__burger' id='burger'>
+          <Burger />
         </div>
       </div>
     </header>

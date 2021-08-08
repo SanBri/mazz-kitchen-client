@@ -38,3 +38,42 @@
     }
   }
 }
+
+/* SMARTPHONE */
+@media all and (max-width: $breakpoint-smartphone) {
+  .footer {
+    &-content {
+      flex-direction: column;
+    }
+    &-card {
+      width: 100%;
+      margin: auto;
+      padding: 1.5rem;
+      text-align: center;
+      & p,
+      a {
+        font-size: 2rem;
+        padding-bottom: 0.5rem;
+        line-height: 2rem;
+      }
+      & li {
+        padding-bottom: 0.8rem;
+      }
+      &__line {
+        width: 40%;
+        margin-bottom: 0.5rem;
+      }
+      &__content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    & .social-networks {
+      display: inline-flex;
+    }
+  }
+  #Méta {
+    display: none;
+  }
+}

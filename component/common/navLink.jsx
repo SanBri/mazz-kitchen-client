@@ -1,7 +1,20 @@
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Head from "next/head";
+import { useDispatch } from "react-redux";
+
+import { toggleMenu } from "../../actions/menu";
 
 const navLink = ({ text, link, icn, onClick }) => {
+  const dispatch = useDispatch();
+  const [smartPhone, setsmartPhone] = useState(false);
+
+  useEffect(() => {
+    if (screen.width < 600) {
+      setsmartPhone(true);
+    }
+  }, []);
+
   return (
     <>
       <Head>
@@ -12,7 +25,11 @@ const navLink = ({ text, link, icn, onClick }) => {
       </Head>
       <div className='navigation-bar__link'>
         <Link href={link}>
-          <a onClick={onClick}>
+          <a
+            onClick={
+              smartPhone === true ? (e) => dispatch(toggleMenu()) : onClick
+            }
+          >
             <p>
               {icn && <i className={icn}></i>} {text}
             </p>

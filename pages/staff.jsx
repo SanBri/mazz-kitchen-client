@@ -5,10 +5,10 @@ import Team from "../component/staff/team";
 const Staff = () => {
   return (
     <>
-      <Section padding='5vh 8rem 0 8rem' id='whySection' minHeight='100vh'>
+      <Section id='whySection'>
         <Why />
       </Section>
-      <Section padding='0 8rem 0 8rem' id='teamSection' minHeight='90vh'>
+      <Section id='teamSection'>
         <Team />
       </Section>
     </>

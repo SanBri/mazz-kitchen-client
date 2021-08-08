@@ -1,3 +1,11 @@
+#postSection {
+  padding: 8rem 8rem 2rem 8rem;
+  background-color: $background-prim;
+  .card {
+    width: auto;
+  }
+}
+
 .single-post {
   display: flex;
   flex-direction: column;
@@ -13,7 +21,6 @@
     margin: 1rem auto 0.5rem auto;
   }
   &__image {
-    // margin: 1rem;
     width: 80rem;
     height: 30rem;
     background-color: green;
@@ -37,6 +44,44 @@
     }
     &--active {
       margin-top: 1rem;
+    }
+  }
+}
+
+/* SMARTPHONE */
+@media all and (max-width: $breakpoint-smartphone) {
+  #postSection {
+    padding: 5.5rem 0;
+    background-color: $color-primary-white;
+    .card__back {
+      width: 20rem;
+      .btn {
+        margin-left: 0.5rem;
+      }
+    }
+    .card {
+      box-sizing: border-box;
+      width: 100%;
+      margin: 1rem 0;
+      padding: 1rem;
+    }
+  }
+  .single-post {
+    width: 100%;
+    &__line {
+      width: 100%;
+    }
+    &__administration {
+      display: none;
+    }
+    &__image {
+      width: 100%;
+    }
+    &__text {
+      width: 100%;
+      & p {
+        font-size: 1.8rem;
+      }
     }
   }
 }

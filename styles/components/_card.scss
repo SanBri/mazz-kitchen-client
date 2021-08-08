@@ -42,3 +42,12 @@
     color: $color-secondary;
   }
 }
+
+/* SMARTPHONE */
+@media all and (max-width: $breakpoint-smartphone) {
+  #loginSection {
+    .card {
+      display: none;
+    }
+  }
+}

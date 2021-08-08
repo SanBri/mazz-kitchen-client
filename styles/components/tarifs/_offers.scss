@@ -1,8 +1,12 @@
+#offersSection {
+  padding: 10vh 8rem 0 8rem;
+}
+
 .offers {
   background-color: $color-primary-black;
   padding: 3rem;
   border-top-right-radius: 300px;
-  height: 85vh;
+  height: 48rem;
   &__title {
     color: $color-primary-white;
     padding-bottom: $padding-bottom-title;
@@ -11,7 +15,7 @@
     display: flex;
     flex-direction: row;
     margin: auto;
-    max-width: 90rem;
+    width: 90rem;
     & p {
       font-size: 1.4rem;
       padding-bottom: $padding-bottom-paragraph;
@@ -47,6 +51,52 @@
         padding-top: 0;
         & p {
           font-size: $condition-text;
+        }
+      }
+    }
+  }
+}
+
+/* SMARTPHONE */
+@media all and (max-width: $breakpoint-smartphone) {
+  #offersSection {
+    padding: 0;
+  }
+  .offers {
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    height: auto;
+    & p {
+      font-size: 1.5rem;
+    }
+    &__title {
+      display: none;
+    }
+    &__content {
+      background-color: $color-primary-black;
+      width: 100%;
+      flex-direction: column;
+      padding: 0;
+      padding-top: 7rem;
+      & .condition-text {
+        & p {
+          font-size: 1.1rem;
+        }
+      }
+      &-left {
+        background-color: $color-primary-black;
+        padding: 1rem 2rem;
+        p {
+          color: $color-secondary;
+        }
+      }
+      &-right {
+        background-color: $color-secondary;
+        padding: 1rem 2rem;
+        p {
+          color: $color-primary-black;
         }
       }
     }

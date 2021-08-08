@@ -4,7 +4,7 @@ import QuoteIntroduction from "../component/quote/quoteIntroduction";
 const Quote = () => {
   return (
     <>
-      <Section id='quoteSection' minHeight='100vh' padding='5vh 8rem 0 8rem'>
+      <Section id='quoteSection'>
         <QuoteIntroduction />
       </Section>
     </>

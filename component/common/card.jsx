@@ -8,7 +8,6 @@ const Card = ({
   icn,
   linkBack,
   textBack = "Retour",
-  width = "50rem",
   marginLeft = "23rem",
 }) => {
   return (
@@ -28,7 +27,7 @@ const Card = ({
           </Link>
         </div>
       )}
-      <div className='card' style={{ width: width }}>
+      <div className='card'>
         {title && icn && (
           <div className='card__title'>
             <h3>

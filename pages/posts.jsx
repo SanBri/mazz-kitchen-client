@@ -18,7 +18,7 @@ const Posts = () => {
   const posts = useSelector((state) => state.postReducer.posts);
 
   return (
-    <Section id='postsSection' minHeight='40rem' padding='10vh 8rem 1rem 8rem'>
+    <Section id='postsSection' minHeight='40rem'>
       <div className='posts'>
         <div className='posts__title'>
           <h1>LES ACTUALITÉS DU STUDIO</h1>

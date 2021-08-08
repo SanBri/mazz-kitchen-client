@@ -5,10 +5,10 @@ import Offers from "../component/tarifs/offers";
 const Tarifs = () => {
   return (
     <>
-      <Section padding='10vh 8rem 0 8rem' id='offersSection'>
+      <Section id='offersSection'>
         <Offers />
       </Section>
-      <Section padding='0 8rem 0 8rem' id='contactSection'>
+      <Section id='contactSection'>
         <Contact />
       </Section>
     </>

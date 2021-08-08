@@ -2,32 +2,19 @@ import Section from "../component/common/section";
 import Card from "../component/common/card";
 import SinglePost from "../component/post/SinglePost";
 import Alert from "../component/layout/Alert.jsx";
-import Spinner from "../component/layout/Spinner";
-
-import { useRouter } from "next/router";
 
 const Post = ({ post }) => {
-  const router = useRouter();
-
-  if (router.isFallback) {
-    return <Spinner />;
-  }
-
   return (
-    <Section id='postSection' minHeight='0' padding='8rem 8rem 2rem 8rem'>
+    <Section id='postSection' minHeight='0' color=''>
       <Alert />
-      <Card
-        linkBack={"/posts"}
-        textBack='Retour aux articles'
-        width='auto'
-        marginLeft='0'
-      >
+      <Card linkBack={"/posts"} textBack='Retour aux articles' marginLeft='0'>
         <SinglePost post={post} />
       </Card>
     </Section>
   );
 };
 
+// const URL = "http://localhost:5000";
 const URL = "https://mazz-kitchen.herokuapp.com";
 
 export async function getStaticPaths() {
@@ -42,7 +29,7 @@ export async function getStaticPaths() {
   } catch (err) {
     console.log(`Error fetching ressources: `, err);
   }
-  return { paths, fallback: true };
+  return { paths, fallback: false };
 }
 
 export const getStaticProps = async ({ params }) => {

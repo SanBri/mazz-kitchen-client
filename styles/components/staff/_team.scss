@@ -1,3 +1,7 @@
+#teamSection {
+  padding: 0 8rem 0 8rem;
+}
+
 .team {
   background-color: $color-primary-white;
   position: relative;
@@ -31,6 +35,30 @@
     }
     &__content {
       padding-bottom: 5rem;
+    }
+  }
+}
+
+/* SMARTPHONE */
+@media all and (max-width: $breakpoint-smartphone) {
+  #teamSection {
+    background-color: $color-primary-white;
+    padding: 1rem 0;
+  }
+  .team {
+    width: 100%;
+    position: initial;
+    height: auto;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-top: 4rem;
+    padding-bottom: 0.5rem;
+    &__title {
+      display: none;
+    }
+    &__content {
+      margin-top: -0.04rem;
+      flex-direction: column;
     }
   }
 }

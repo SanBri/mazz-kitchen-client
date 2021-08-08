@@ -19,4 +19,32 @@
       margin-right: 2rem;
     }
   }
+  &__burger {
+    display: none;
+  }
+}
+
+/* SMARTPHONE */
+@media all and (max-width: $breakpoint-smartphone) {
+  .fixed-header {
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &__logo {
+      justify-content: start;
+      width: auto;
+    }
+    &__title {
+      display: none;
+    }
+    &__social-networks {
+      display: none;
+    }
+    &__burger {
+      display: block;
+      padding-right: 1.5rem;
+    }
+  }
 }

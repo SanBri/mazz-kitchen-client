@@ -7,10 +7,6 @@ const Hero = () => {
       <div className='hero__parallelogram'>
         <div className='hero__parallelogram-content'>
           <div className='hero__parallelogram-logo'>
-            {/* <h4>
-              MAZZ <br />
-              KITCHEN
-            </h4> */}
             <Icon src='/images/logo-black.png' width='100%' height='50%' />{" "}
             <p>SOLUTIONS DIGITALES ET SERVICES WEB</p>
           </div>
@@ -26,6 +22,7 @@ const Hero = () => {
       <div className='hero__title'>
         <p>la recette idéale !</p>
       </div>
+      <div className='hero__blur-background'></div>
     </div>
   );
 };

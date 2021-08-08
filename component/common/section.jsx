@@ -18,8 +18,8 @@ const Section = ({
   topPosition,
   marginTop,
   minHeight,
+  padding,
   color = "background-prim",
-  padding = "0 2rem 0 2rem",
 }) => {
   let classDefinition = "section";
 

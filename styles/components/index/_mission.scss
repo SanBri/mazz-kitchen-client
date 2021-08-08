@@ -20,3 +20,17 @@
     }
   }
 }
+
+/* SMARTPHONE */
+@media all and (max-width: $breakpoint-smartphone) {
+  .mission {
+    &__content {
+      flex-direction: column;
+    }
+    &-card {
+      &__title {
+        padding-top: 0;
+      }
+    }
+  }
+}

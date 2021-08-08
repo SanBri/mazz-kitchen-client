@@ -34,7 +34,7 @@ const PostCard = ({ post }) => {
         </Link>
         <div className='post-card__content__buttons'>
           <div className='post-card__content__buttons__social-networks'>
-            <SocialNetworks width='30rem' height='30rem' />
+            {/* <SocialNetworks width='30rem' height='30rem' /> */}
           </div>
           {isAuthenticated && (
             <div className='post-card__content__buttons__administration'>
