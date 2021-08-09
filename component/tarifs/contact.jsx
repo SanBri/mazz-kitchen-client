@@ -15,7 +15,7 @@ const Contact = () => {
         text='Vous avez déjà des idées pour votre projet, une identité visuelle définie, un site web déjà conçu… Vous êtes curieux et vous aimeriez avoir une estimation de nos services afin de travailler sur votre stratégie de communication digitale :'
         finalText='Accédez à notre espace pro pour la réalisation d’un devis sur-mesure.'
         textButton='Votre Devis Personnalisé'
-        linkButton='/#'
+        linkButton='/quote'
       />
     </div>
   );
