@@ -78,7 +78,6 @@
   .navigation-bar {
     padding: 0;
     background-color: $color-secondary;
-    border-top-left-radius: 200px;
     height: 100vh;
     position: fixed;
     &__logo {
@@ -92,7 +91,7 @@
       align-items: center;
     }
     &__link {
-      width: 31rem;
+      width: 32rem;
       margin: 2rem;
       & a,
       p {

@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
         <Header />
       </Section>
       {children}
-      <Section id='footerSection' minHeight='35vh' padding='0 2rem 0 2rem'>
+      <Section id='footerSection' minHeight='35vh'>
         <Footer />
       </Section>
     </div>

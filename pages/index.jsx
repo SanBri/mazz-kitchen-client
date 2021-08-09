@@ -52,11 +52,7 @@ const Index = () => {
           <Strategy />
         </SectionIndex>
       </Section>
-      <Section
-        id='conclusionSection'
-        color='background-prim'
-        padding='1rem 0 2rem 0'
-      >
+      <Section id='conclusionSection' color='background-prim'>
         <Conclusion />
       </Section>
     </>

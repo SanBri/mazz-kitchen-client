@@ -91,6 +91,9 @@ textarea {
 
 /* SMARTPHONE */
 @media all and (max-width: $breakpoint-smartphone) {
+  p {
+    font-size: 1.7rem;
+  }
   .discret {
     font-size: 1.3rem;
   }
