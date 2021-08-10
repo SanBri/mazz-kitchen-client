@@ -37,6 +37,8 @@
 @media all and (max-width: $breakpoint-smartphone) {
   #introductionSection {
     z-index: 11;
+    padding: 0;
+    background-color: green;
     .section__title {
       z-index: 11;
       width: 32rem;
@@ -52,18 +54,22 @@
   }
   .introduction {
     position: absolute;
-    transform: translate(-50%, 50%);
-    top: 120px;
-    left: 50%;
-    margin-top: 110px;
-    padding: 0;
-    width: 100vw;
+    // transform: translate(-50%, 50%);
+    // top: 120px;
+    // left: 50%;
+    // margin-top: 110px;
+    margin-top: -22rem;
+    margin-left: -5rem;
+    padding: 1rem;
     box-sizing: border-box;
     z-index: 11;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     &__text {
       padding: 1.3rem 1rem 0 1rem;
       box-sizing: border-box;
-      width: 100vw;
+      // width: 100vw;
       & p {
         font-size: 1.6rem;
         font-weight: bold;
@@ -81,7 +87,7 @@
     }
   }
   #introductionTransition {
-    margin-top: 18rem;
+    margin-top: 24rem;
     & p {
       padding-top: 2rem;
     }

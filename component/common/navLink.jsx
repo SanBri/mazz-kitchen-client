@@ -10,7 +10,7 @@ const navLink = ({ text, link, icn, onClick }) => {
   const [smartPhone, setsmartPhone] = useState(false);
 
   useEffect(() => {
-    if (screen.width < 600) {
+    if (screen.width < 768) {
       setsmartPhone(true);
     }
   }, []);
