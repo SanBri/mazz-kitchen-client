@@ -43,7 +43,7 @@
       width: 32rem;
       padding: 0;
       transform: translate(-50%, 50%);
-      top: 26rem;
+      top: 28rem;
       left: 50%;
       position: absolute;
       & h2 {
@@ -71,6 +71,7 @@
       }
     }
     &__buttons {
+      padding-top: 1rem;
       flex-direction: column;
       & .btn {
         font-size: 1.4rem;
