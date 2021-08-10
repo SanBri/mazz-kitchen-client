@@ -1,7 +1,14 @@
 import Button from "./button";
 import Link from "next/link";
 
-const ConclusionCard = ({ title, text, textButton, finalText, linkButton }) => {
+const ConclusionCard = ({
+  title,
+  text,
+  textButton,
+  finalText,
+  linkButton,
+  externalLink,
+}) => {
   return (
     <div className='conclusion-card'>
       <div className='conclusion-card__title'>
@@ -13,11 +20,18 @@ const ConclusionCard = ({ title, text, textButton, finalText, linkButton }) => {
         <p>{finalText}</p>
       </div>
       <div className='conclusion-card__button'>
-        <Link href={linkButton}>
-          <a>
+        {linkButton && (
+          <Link href={linkButton}>
+            <a>
+              <Button children={textButton} />
+            </a>
+          </Link>
+        )}
+        {externalLink && (
+          <a href={externalLink} target='_blank' rel='noopener noreferrer'>
             <Button children={textButton} />
           </a>
-        </Link>
+        )}
       </div>
     </div>
   );

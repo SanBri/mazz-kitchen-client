@@ -8,7 +8,7 @@ const Contact = () => {
         text='Vous souhaitez vous lancer et faire de votre entreprise une machine dynamique sur le web ? Nous vous proposons de nous rencontrer en Visio ou en Physique afin de discuter de votre projet et de mettre en place la meilleure stratégie de communication digitale pour atteindre vos objectifs :'
         finalText='Accédez à notre espace agenda pour la prise de rendez-vous.'
         textButton='Prendre Rendez-Vous Avec Notre Équipe'
-        linkButton='/#'
+        externalLink='https://mazz-kitchen-studio.reservio.com/'
       />
       <ConclusionCard
         title='ENVIE DE CHANGEMENT ?'
