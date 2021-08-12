@@ -39,7 +39,6 @@
     & p {
       text-align: justify;
       padding-bottom: 1.5em;
-      font-weight: bold;
       font-size: 1.4rem;
     }
     &-left {
@@ -79,6 +78,7 @@
     padding: 0;
   }
   .why {
+    background-color: $color-primary-white;
     width: 100%;
     padding: 0;
     border-radius: 0;
@@ -94,17 +94,25 @@
       display: none;
     }
     &__content {
-      padding-top: 7rem;
+      padding-top: 2rem;
       width: 100%;
       flex-direction: column;
       &-left {
-        padding: 1rem 2rem;
+        padding: 0rem 2rem;
+        &__image {
+          display: flex;
+          justify-content: center;
+        }
       }
       &-right {
         background-color: $color-primary-black;
         padding: 1rem 2rem;
         p {
           color: $color-secondary;
+        }
+        &__image {
+          display: flex;
+          justify-content: center;
         }
       }
     }
