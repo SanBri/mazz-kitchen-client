@@ -21,7 +21,7 @@ const Footer = () => {
           </FooterCard>
           <FooterCard title='Mazz Kitchen'>
             <ul>
-              <Link href='/staff'>
+              <Link href='/about'>
                 <a>
                   <li>À propos de nous</li>
                 </a>

@@ -26,7 +26,7 @@ const NavBar = () => {
           <NavLink text='Pourquoi Mazz Kitchen ?' link='/staff' />
           <NavLink text='Nos Offres &amp; Tarifs' link='/tarifs' />
           <NavLink text='Actualités' link='/posts' />
-          <NavLink text='À propos' link='#' />
+          <NavLink text='À propos' link='/about' />
         </div>
         {isAuthenticated && (
           <div className='navigation-bar__admin'>

@@ -1,0 +1,34 @@
+#aboutSection {
+  padding: 5rem 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about {
+  width: auto;
+  margin: auto;
+  &__logo {
+    text-align: center;
+  }
+  &__text {
+    text-align: center;
+  }
+  p {
+    padding-bottom: $padding-bottom-paragraph;
+  }
+}
+
+/* SMARTPHONE */
+@media all and (max-width: $breakpoint-smartphone) {
+  #aboutSection {
+    padding: 5rem 0 2rem 0;
+  }
+  .about {
+    &__text {
+      box-sizing: border-box;
+      padding: 0 1rem;
+      text-align: center;
+    }
+  }
+}
