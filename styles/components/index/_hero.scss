@@ -68,7 +68,8 @@
   .hero {
     padding: 0;
     z-index: 1;
-    height: 94vh;
+    height: 96vh;
+    box-sizing: border-box;
     background-size: cover;
     background-position-x: 70%;
     &__parallelogram {
@@ -106,25 +107,26 @@
       }
     }
     &__title {
-      width: auto;
-      box-sizing: border-box;
-      padding: 0.5rem;
-      top: 19.8rem;
-      left: 2%;
-      display: flex;
-      justify-content: center;
-      margin: auto;
-      z-index: 12;
-      color: $color-primary-black;
-      animation: yellow-to-black 1s, opacity 0.5s;
-      & p {
-        font-size: 7.8rem;
-        color: black;
-      }
+      display: none;
+      // width: auto;
+      // box-sizing: border-box;
+      // padding: 0.5rem;
+      // top: 19.8rem;
+      // left: 2%;
+      // display: flex;
+      // justify-content: center;
+      // margin: auto;
+      // z-index: 12;
+      // color: $color-primary-black;
+      // animation: yellow-to-black 1s, opacity 0.5s;
+      // & p {
+      //   font-size: 7.8rem;
+      //   color: black;
+      // }
     }
     &__blur-background {
       display: block;
-      height: 94vh;
+      height: 96vh;
       width: 100%;
       background-color: rgba(255, 255, 255, 0.5);
       z-index: 8;

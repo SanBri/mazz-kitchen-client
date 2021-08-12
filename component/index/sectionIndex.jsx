@@ -1,6 +1,6 @@
-const SectionIndex = ({ title, children }) => {
+const SectionIndex = ({ title, children, id = title }) => {
   return (
-    <div className='section-index'>
+    <div className='section-index' id={id}>
       <div className='section__title'>
         <h2>{title}</h2>
       </div>

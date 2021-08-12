@@ -1,9 +1,15 @@
 import Button from "../common/button";
 
-const Introduction = () => {
+const MobileIntroduction = () => {
   return (
-    <div className='introduction computer-only'>
-      <div className='introduction__text'>
+    <div className='mobile-introduction only-mobile'>
+      <div className='mobile-introduction__catchphrase'>
+        <p>la recette idéale !</p>
+      </div>
+      <div className='mobile-introduction__title'>
+        <h2>ET SI ON CHANGEAIT (VRAIMENT) LES CHOSES ?</h2>
+      </div>
+      <div className='mobile-introduction__text'>
         <p>
           Bienvenu(e)s chez Mazz Kitchen, studio de communication digitale
           spécialisée dans les métiers de bouche et les commerces de proximité.
@@ -16,7 +22,7 @@ const Introduction = () => {
           consultant leurs plannings.
         </p>
       </div>
-      <div className='introduction__buttons'>
+      <div className='mobile-introduction__buttons'>
         <a
           href='https://mazz-kitchen-studio.reservio.com/'
           target='_blank'
@@ -29,4 +35,4 @@ const Introduction = () => {
   );
 };
 
-export default Introduction;
+export default MobileIntroduction;

@@ -14,7 +14,10 @@ const Index = () => {
         <Hero />
       </Section>
       <Section padding='4rem 0 0 0' id='introductionSection'>
-        <SectionIndex title='ET SI ON CHANGEAIT (VRAIMENT) LES CHOSES ?'>
+        <SectionIndex
+          id='introductionIndexSection'
+          title='ET SI ON CHANGEAIT (VRAIMENT) LES CHOSES ?'
+        >
           <Introduction />
         </SectionIndex>
       </Section>

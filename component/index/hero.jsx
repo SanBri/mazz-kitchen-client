@@ -1,5 +1,6 @@
 import SocialNetworks from "../common/socialNetworks";
 import Icon from "../common/icon";
+import MobileIntroduction from "./mobileIntroduction";
 
 const Hero = () => {
   return (
@@ -17,6 +18,9 @@ const Hero = () => {
             <p>mazzkitchen@mailo.com</p>
             <p>06.23.56.71.48</p>
           </div>
+        </div>
+        <div className='only-mobile'>
+          <MobileIntroduction />
         </div>
       </div>
       <div className='hero__title'>
