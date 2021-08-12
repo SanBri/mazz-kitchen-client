@@ -49,7 +49,7 @@ const Why = () => {
           </div>
           <div className='why__content-right'>
             <div className='why__content-right__image only-mobile'>
-              <Icon src='/images/mission-02.svg' width='auto' height={300} />
+              <Icon src='/images/why-02.svg' width='auto' height={300} />
             </div>
             <p>
               Mazz Kitchen, c’est{" "}
