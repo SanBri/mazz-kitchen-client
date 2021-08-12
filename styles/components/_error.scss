@@ -1,0 +1,32 @@
+#errorSection {
+  padding: 5rem 8rem 2rem 8rem;
+  & .error {
+    & h1 {
+      margin-bottom: 1rem;
+    }
+    & .card {
+      width: auto;
+    }
+    &__logo {
+      margin-top: 2rem;
+    }
+  }
+}
+
+/* SMARTPHONE */
+@media all and (max-width: $breakpoint-smartphone) {
+  #errorSection {
+    padding: 5rem 0;
+  }
+  .error {
+    & .card__back {
+      width: auto;
+    }
+    & h3 {
+      font-size: 2rem;
+    }
+    & p {
+      font-size: 1.6rem;
+    }
+  }
+}
