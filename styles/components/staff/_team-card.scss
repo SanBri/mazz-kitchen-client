@@ -54,6 +54,8 @@
 /* SMARTPHONE */
 @media all and (max-width: $breakpoint-smartphone) {
   .team-card {
+    box-sizing: border-box;
+
     padding-top: 1rem;
     padding-bottom: -3rem;
     margin-bottom: -2.5rem;
@@ -64,6 +66,7 @@
       font-size: 1.6rem;
     }
     &__text {
+      box-sizing: border-box;
       padding: 0 3rem 1rem 3rem;
       text-align: justify;
     }
