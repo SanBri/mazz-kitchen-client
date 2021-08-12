@@ -9,7 +9,11 @@ const Offers = () => {
       <div className='offers__content'>
         <div className='offers__content-left'>
           <div className='offers__content-left__image'>
-            <Icon src='/images/tarifs/image01.svg' width='auto' height={300} />
+            <Icon
+              src='/images/tarifs/offers-01.svg'
+              width='auto'
+              height={300}
+            />
           </div>
           <p>
             Nous vous proposons{" "}
@@ -62,7 +66,11 @@ const Offers = () => {
         </div>
         <div className='offers__content-right'>
           <div className='offers__content-right__image'>
-            <Icon src='/images/tarifs/image02.svg' width='auto' height={300} />
+            <Icon
+              src='/images/tarifs/offers-02.svg'
+              width='auto'
+              height={300}
+            />
           </div>
           <p>
             ​Vous êtes un acteur de la{" "}

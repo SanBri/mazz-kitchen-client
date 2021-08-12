@@ -10,7 +10,7 @@ const Why = () => {
         <div className='why__content'>
           <div className='why__content-left'>
             <div className='why__content-left__image only-mobile'>
-              <Icon src='/images/staff/image01.svg' width='auto' height={300} />
+              <Icon src='/images/staff/why-01.svg' width='auto' height={300} />
             </div>
             <p>
               Rien de tel qu’une belle bio pour faire connaissance, découvrez
@@ -49,7 +49,7 @@ const Why = () => {
           </div>
           <div className='why__content-right'>
             <div className='why__content-right__image only-mobile'>
-              <Icon src='/images/staff/image02.svg' width='auto' height={300} />
+              <Icon src='/images/staff/why-02.svg' width='auto' height={300} />
             </div>
             <p>
               Mazz Kitchen, c’est{" "}
