@@ -18,7 +18,7 @@ const NavBar = () => {
         <div className='navigation-bar__logo'>
           <Link href='/'>
             <a>
-              <Icon src='./icons/black/logo.svg' />
+              <Icon src='./icons/white/logo.svg' />
             </a>
           </Link>
         </div>
