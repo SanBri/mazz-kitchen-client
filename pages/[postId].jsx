@@ -28,7 +28,7 @@ export async function getStaticPaths() {
   } catch (err) {
     console.log(`Error fetching ressources: `, err);
   }
-  return { paths, fallback: false };
+  return { paths, fallback: blocking };
 }
 
 export const getStaticProps = async ({ params }) => {
