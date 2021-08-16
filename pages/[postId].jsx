@@ -22,7 +22,6 @@ export async function getStaticPaths() {
     const uri = `${URL}/api/posts/`;
     const res = await fetch(uri);
     const posts = await res.json();
-    console.log("staticPaths", params);
     paths = posts.map((post) => ({
       params: { postId: post._id },
     }));
