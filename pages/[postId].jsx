@@ -31,8 +31,8 @@ export async function getStaticPaths() {
   return { paths, fallback: false };
 }
 
-export const getStaticProps = async ({ params }) => {
-  const uri = `${URL}/api/posts/${params.postId}`;
+export const getStaticProps = async (context) => {
+  const uri = `${URL}/api/posts/${context.params.postId}`;
   const res = await fetch(uri);
   const post = await res.json();
   return { props: { post } };
