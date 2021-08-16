@@ -17,14 +17,14 @@ const PostCard = ({ post }) => {
     <div className='post-card'>
       <div className='post-card__content'>
         <div className='post-card__content__title'>
-          <Link href={`/${encodeURIComponent(post._id)}`}>
+          <Link href={`/posts/${encodeURIComponent(post._id)}`}>
             <a>
               <h4>{title}</h4>
             </a>
           </Link>
         </div>
         <div className='post-card__content__line'></div>
-        <Link href={`/${encodeURIComponent(post._id)}`}>
+        <Link href={`/posts/${encodeURIComponent(post._id)}`}>
           <a>
             <div
               className='post-card__content__text'
@@ -44,7 +44,7 @@ const PostCard = ({ post }) => {
         </div>
       </div>
       <div className='post-card__image'></div>
-      <Link href={`/${encodeURIComponent(post._id)}`}>
+      <Link href={`/posts/${encodeURIComponent(post._id)}`}>
         <a>
           <div className='post-card__arrow'>
             <i className='fas fa-chevron-left'></i>

@@ -1,7 +1,7 @@
-import Section from "../component/common/section";
-import Card from "../component/common/card";
-import SinglePost from "../component/post/SinglePost";
-import Alert from "../component/layout/Alert.jsx";
+import Section from "../../component/common/section";
+import Card from "../../component/common/card";
+import SinglePost from "../../component/post/SinglePost";
+import Alert from "../../component/layout/Alert.jsx";
 
 const Post = ({ post }) => {
   return (
