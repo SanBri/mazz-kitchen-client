@@ -48,7 +48,7 @@ const PostsList = () => {
                   <a>{post.title}</a>
                 </Link>
               ) : (
-                <Link href={"/" + post._id}>
+                <Link href={`/${encodeURIComponent(post._id)}`}>
                   <a>{post.title}</a>
                 </Link>
               )}
