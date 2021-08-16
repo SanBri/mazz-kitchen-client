@@ -22,17 +22,19 @@ export async function getStaticPaths() {
     const uri = `${URL}/api/posts/`;
     const res = await fetch(uri);
     const posts = await res.json();
+    console.log("staticPaths", params);
     paths = posts.map((post) => ({
       params: { postId: post._id },
     }));
   } catch (err) {
     console.log(`Error fetching ressources: `, err);
   }
-  return { paths, fallback: true };
+  return { paths, fallback: false };
 }
 
 export const getStaticProps = async ({ params }) => {
   const uri = `${URL}/api/posts/${params.postId}`;
+  console.log("staticProps", params);
   const res = await fetch(uri);
   const data = await res.json();
   return { props: { post: data } };
