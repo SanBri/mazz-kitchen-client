@@ -21,7 +21,7 @@ const Index = () => {
           <Introduction />
         </SectionIndex>
       </Section>
-      <Section id='introductionTransition' minHeight='10vh'>
+      <Section id='introductionTransition'>
         <p>
           Nous vous proposons la mise en place d’une stratégie de communication
           digitale complète, interactive et innovante, mais vous pouvez

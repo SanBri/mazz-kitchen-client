@@ -46,7 +46,7 @@
     display: none;
   }
   #introductionTransition {
-    margin-top: 18rem;
+    margin-top: 16rem;
     & p {
       padding-top: 4rem;
     }
@@ -56,7 +56,7 @@
 /* SMALL SMARTPHONE */
 @media all and (max-width: $breakpoint-small-smartphone) {
   #introductionTransition {
-    margin-top: 26rem;
+    margin-top: 24rem;
     padding: 2rem;
   }
 }
