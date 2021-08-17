@@ -24,7 +24,13 @@ const Team = () => {
           name='SANDRO BRIGNOLI'
           job='Développeur Web'
           text='Développer un site web, c’est à chaque fois un nouveau défi que je souhaite réaliser avec inventivité et persévérance. Il faut savoir faire preuve de créativité, s’adapter rapidement et s’organiser de façon à être efficace. Afin de rester cohérent dans mon travail, j’ai intégré Mazz Kitchen, pouvant apporter à la fois mon savoir-faire en matière de développement web, ainsi que mon vécu provenant des différentes expériences acquises en travaillant dans les commerces de proximité.'
-          icons={{ linkedin: "in/sandro-brignoli/" }}
+          icons={{
+            facebook: "mazzkitchencom",
+            instagram: "mazzkitchencom",
+            twitter: "mazzkitchencom",
+
+            linkedin: "in/sandro-brignoli/",
+          }}
         />
       </div>
     </div>

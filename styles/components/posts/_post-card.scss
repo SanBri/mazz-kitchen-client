@@ -86,6 +86,7 @@
 @media all and (max-width: $breakpoint-smartphone) {
   .post-card {
     width: 20rem;
+    padding: 1.6rem;
     height: auto;
     &__content {
       width: 30rem;

@@ -43,7 +43,7 @@
     padding: 1rem 0;
   }
   .conclusion {
-    width: 100vw;
+    width: 100%;
     flex-direction: column;
     padding: 0;
     padding-top: 1rem;
@@ -51,6 +51,7 @@
     &-card {
       width: 100%;
       margin: auto;
+      box-sizing: border-box;
       padding: 0 0 2.5rem 0;
       &__title {
         width: 25rem;

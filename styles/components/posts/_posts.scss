@@ -30,9 +30,16 @@
     padding-top: 6rem;
   }
   .posts {
-    width: 100%;
+    width: 25rem;
     &__title {
+      width: 50rem;
+      & h1 {
+        font-size: 1rem;
+      }
       display: none;
+    }
+    &__content {
+      background-color: red;
     }
   }
 }
