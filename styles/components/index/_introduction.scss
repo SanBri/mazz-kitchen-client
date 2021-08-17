@@ -48,7 +48,7 @@
   #introductionTransition {
     margin-top: 16rem;
     padding: 1rem;
-    padding-top: 6rem;
+    padding-top: 4rem;
     & p {
       padding-top: 4rem;
     }
@@ -67,16 +67,13 @@
 @media all and (min-height: 700px) {
   #introductionTransition {
     padding-top: 2rem;
-    & p {
-      padding-top: 4rem;
-    }
   }
 }
 @media all and (min-height: 800px) {
   #introductionTransition {
     padding-top: 1.5rem;
     & p {
-      padding-top: 1rem;
+      padding-top: 2rem;
     }
   }
 }

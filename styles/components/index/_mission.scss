@@ -28,17 +28,27 @@
       flex-direction: column;
     }
     &-card {
+      &__title {
+        padding-top: 0;
+        h3 {
+          font-size: 2.1rem;
+        }
+      }
+    }
+  }
+}
+
+/* SMALL SMARTPHONE */
+@media all and (max-width: $breakpoint-small-smartphone) {
+  .mission {
+    &-card {
       &__image {
         display: flex;
         width: 25rem;
       }
       &__title {
-        padding-top: 0;
         width: 25rem;
         text-align: center;
-        h3 {
-          font-size: 2.1rem;
-        }
       }
       &__text {
         padding: 2rem;
