@@ -103,3 +103,17 @@
     }
   }
 }
+
+/* SMALL SMARTPHONE */
+@media all and (max-width: $breakpoint-small-smartphone) {
+  .navigation-bar {
+    &__link {
+      width: 28rem;
+      margin: 2rem;
+      & a,
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

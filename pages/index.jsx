@@ -21,11 +21,7 @@ const Index = () => {
           <Introduction />
         </SectionIndex>
       </Section>
-      <Section
-        padding='1rem 5rem 3rem 5rem'
-        id='introductionTransition'
-        minHeight='10vh'
-      >
+      <Section id='introductionTransition' minHeight='10vh'>
         <p>
           Nous vous proposons la mise en place d’une stratégie de communication
           digitale complète, interactive et innovante, mais vous pouvez

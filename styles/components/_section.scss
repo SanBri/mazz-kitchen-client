@@ -48,3 +48,14 @@
     padding: 1rem 5rem 3rem 5rem;
   }
 }
+
+/* SMALL SMARTPHONE */
+@media all and (max-width: $breakpoint-small-smartphone) {
+  .section {
+    &__title {
+      padding: 0;
+      padding-left: 1rem;
+      width: 30rem;
+    }
+  }
+}

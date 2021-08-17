@@ -39,3 +39,24 @@
     }
   }
 }
+
+/* SMALL SMARTPHONE */
+@media all and (max-width: $breakpoint-small-smartphone) {
+  .mobile-introduction {
+    &__catchphrase {
+      & p {
+        font-size: 7rem;
+      }
+    }
+    &__title {
+      & h2 {
+        font-size: 1.8rem;
+      }
+    }
+    &__text {
+      & p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
