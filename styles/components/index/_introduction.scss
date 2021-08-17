@@ -56,7 +56,8 @@
 /* SMALL SMARTPHONE */
 @media all and (max-width: $breakpoint-small-smartphone) {
   #introductionTransition {
-    margin-top: 24rem;
-    padding: 2rem;
+    margin-top: 20rem;
+    padding: 1rem;
+    padding-top: 6rem;
   }
 }
