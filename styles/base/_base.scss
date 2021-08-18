@@ -2,7 +2,7 @@ html {
   font-size: 16px;
 }
 
-.only-mobile {
+.mobile-only {
   display: none;
 }
 
@@ -15,7 +15,7 @@ html {
 
 /* SMARTPHONE */
 @media all and (max-width: $breakpoint-smartphone) {
-  .only-mobile {
+  .mobile-only {
     display: initial;
   }
   .computer-only {

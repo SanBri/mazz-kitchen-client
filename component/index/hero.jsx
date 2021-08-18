@@ -19,7 +19,7 @@ const Hero = () => {
             <p>06.23.56.71.48</p>
           </div>
         </div>
-        <div className='only-mobile'>
+        <div className='mobile-only'>
           <MobileIntroduction />
         </div>
       </div>

@@ -2,7 +2,7 @@ import Button from "../common/button";
 
 const MobileIntroduction = () => {
   return (
-    <div className='mobile-introduction only-mobile'>
+    <div className='mobile-introduction mobile-only'>
       <div className='mobile-introduction__catchphrase'>
         <p>la recette idéale !</p>
       </div>

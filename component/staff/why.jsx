@@ -9,7 +9,7 @@ const Why = () => {
         </div>
         <div className='why__content'>
           <div className='why__content-left'>
-            <div className='why__content-left__image only-mobile'>
+            <div className='why__content-left__image mobile-only'>
               <Icon src='/images/why-01.svg' width='auto' height={300} />
             </div>
             <p>
@@ -48,7 +48,7 @@ const Why = () => {
             </p>
           </div>
           <div className='why__content-right'>
-            <div className='why__content-right__image only-mobile'>
+            <div className='why__content-right__image mobile-only'>
               <Icon src='/images/why-02.svg' width='auto' height={300} />
             </div>
             <p>

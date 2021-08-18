@@ -112,3 +112,26 @@
     }
   }
 }
+
+/* SMARTPHONE */
+@media all and (max-width: $breakpoint-small-smartphone) {
+  .post-card {
+    height: 24rem;
+    &__content {
+      height: 23.2rem;
+      &__line {
+        height: 2px;
+      }
+    }
+    &__arrow {
+      transform: rotate(180deg) translateX(50%);
+      left: 50%;
+      top: 100%;
+      & i {
+        font-size: 3.5rem;
+        top: 5%;
+        right: 35%;
+      }
+    }
+  }
+}

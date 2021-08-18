@@ -37,7 +37,7 @@ const PostCard = ({ post }) => {
             {/* <SocialNetworks width='30rem' height='30rem' /> */}
           </div>
           {isAuthenticated && (
-            <div className='post-card__content__buttons__administration'>
+            <div className='post-card__content__buttons__administration computer-only'>
               <Actions id={_id} fontSize='1.9rem' />
             </div>
           )}
