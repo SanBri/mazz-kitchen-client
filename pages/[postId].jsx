@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import Section from "../component/common/section";
 import Card from "../component/common/card";
 import SinglePost from "../component/post/SinglePost";
@@ -5,12 +7,17 @@ import Alert from "../component/layout/Alert.jsx";
 
 const Post = ({ post }) => {
   return (
-    <Section id='postSection' minHeight='0' color=''>
-      <Alert />
-      <Card linkBack={"/posts"} textBack='Retour aux articles' marginLeft='0'>
-        <SinglePost post={post} />
-      </Card>
-    </Section>
+    <>
+      <Head>
+        <title>Mazz Kitchen | {post.title}</title>
+      </Head>
+      <Section id='postSection' minHeight='0' color=''>
+        <Alert />
+        <Card linkBack={"/posts"} textBack='Retour aux articles' marginLeft='0'>
+          <SinglePost post={post} />
+        </Card>
+      </Section>
+    </>
   );
 };
 

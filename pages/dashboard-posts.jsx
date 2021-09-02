@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import PrivatePage from "../component/layout/PrivatePage";
 import Section from "../component/common/section";
 import Card from "../component/common/card";
@@ -7,30 +9,35 @@ import Alert from "../component/layout/Alert.jsx";
 
 const dashboardPosts = () => {
   return (
-    <Section
-      id='dashboardPosts'
-      minHeight='100vh'
-      padding='8rem 8rem 3rem 8rem'
-    >
-      <Card
-        icn={"fas fa-file"}
-        title='Gestion des articles'
-        linkBack='/dashboard'
-        textBack='Administration'
+    <>
+      <Head>
+        <title>Mazz Kitchen | Gestion des articles</title>
+      </Head>
+      <Section
+        id='dashboardPosts'
+        minHeight='100vh'
+        padding='8rem 8rem 3rem 8rem'
       >
-        <div id='addPostLink' className='dashboard-item'>
-          <DashboardLink
-            icn='fas fa-pencil-alt'
-            title='Rédiger un article'
-            link='/dashboard-create-post'
-          />
-        </div>
-        <div className='dashboard-posts'>
-          <Alert />
-          <PostsList />
-        </div>
-      </Card>
-    </Section>
+        <Card
+          icn={"fas fa-file"}
+          title='Gestion des articles'
+          linkBack='/dashboard'
+          textBack='Administration'
+        >
+          <div id='addPostLink' className='dashboard-item'>
+            <DashboardLink
+              icn='fas fa-pencil-alt'
+              title='Rédiger un article'
+              link='/dashboard-create-post'
+            />
+          </div>
+          <div className='dashboard-posts'>
+            <Alert />
+            <PostsList />
+          </div>
+        </Card>
+      </Section>
+    </>
   );
 };
 

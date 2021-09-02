@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import Head from "next/head";
 
 import PrivatePage from "../component/layout/PrivatePage";
 import Section from "../component/common/section";
@@ -12,6 +13,9 @@ const dashboard = () => {
 
   return (
     <>
+      <Head>
+        <title>Mazz Kitchen | Administration</title>
+      </Head>
       <Section id='dashboard' minHeight='100vh' padding='8rem 8rem 0 8rem'>
         <Card icn={"fas fa-user"} title={name}>
           <DashboardItem />

@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Provider store={store}>
       <Head>
-        <title>{`Mazz Kitchen - Solution Digitales`}</title>
+        <title>{`Mazz Kitchen - Solutions Digitales`}</title>
         <link rel='icon' href='/favicon.ico' />
         <meta
           name='viewport'

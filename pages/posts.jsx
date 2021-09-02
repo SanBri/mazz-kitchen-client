@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import Head from "next/head";
 
 import { getPublishedPosts } from "../actions/post";
 
@@ -18,23 +19,28 @@ const Posts = () => {
   const posts = useSelector((state) => state.postReducer.posts);
 
   return (
-    <Section id='postsSection' minHeight='40rem'>
-      <div className='posts'>
-        <div className='posts__title'>
-          <h1>LES ACTUALITÉS DU STUDIO</h1>
+    <>
+      <Head>
+        <title>Mazz Kitchen | Acualités</title>
+      </Head>
+      <Section id='postsSection' minHeight='40rem'>
+        <div className='posts'>
+          <div className='posts__title'>
+            <h1>LES ACTUALITÉS DU STUDIO</h1>
+          </div>
+          <Alert />
+          {loading ? (
+            <Spinner />
+          ) : posts.length > 0 ? (
+            posts.map((post) => <PostCard key={post._id} post={post} />)
+          ) : (
+            <Card>
+              <p>Aucun article</p>
+            </Card>
+          )}
         </div>
-        <Alert />
-        {loading ? (
-          <Spinner />
-        ) : posts.length > 0 ? (
-          posts.map((post) => <PostCard key={post._id} post={post} />)
-        ) : (
-          <Card>
-            <p>Aucun article</p>
-          </Card>
-        )}
-      </div>
-    </Section>
+      </Section>
+    </>
   );
 };
 
