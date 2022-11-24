@@ -11,7 +11,8 @@ import {
 } from "./types";
 
 // const URL = "http://localhost:5000";
-const URL = "https://mazz-kitchen.herokuapp.com";
+// const URL = "https://mazz-kitchen.herokuapp.com";
+const URL = "https://mazz-kichen.onrender.com";
 
 // Get All Posts
 export const getPosts = () => async (dispatch) => {

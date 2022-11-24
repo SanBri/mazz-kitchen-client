@@ -21,7 +21,8 @@ const Post = ({ post }) => {
   );
 };
 
-const URL = "https://mazz-kitchen.herokuapp.com";
+// const URL = "https://mazz-kitchen.herokuapp.com";
+const URL = "https://mazz-kichen.onrender.com";
 
 export async function getStaticPaths() {
   let paths = [];

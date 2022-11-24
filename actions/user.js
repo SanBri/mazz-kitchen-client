@@ -2,7 +2,8 @@ import axios from "axios";
 
 import { setAlert } from "./alert";
 
-const URL = "https://mazz-kitchen.herokuapp.com";
+// const URL = "https://mazz-kitchen.herokuapp.com";
+const URL = "https://mazz-kichen.onrender.com";
 
 // Change Settings
 export const editUserSettings = (formData, id) => async (dispatch) => {

@@ -10,7 +10,8 @@ import {
   LOGOUT,
 } from "./types";
 
-const URL = "https://mazz-kitchen.herokuapp.com";
+// const URL = "https://mazz-kitchen.herokuapp.com";
+const URL = "https://mazz-kichen.onrender.com";
 
 // Load User
 export const loadUser = () => async (dispatch) => {
